@@ -89,6 +89,15 @@ svg.logoIcon {
     padding: 0px;
 }
 
+.header {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20PX;
+}
+
 input[type="search"] {
     width: 100%;
     padding: 10px;
@@ -104,7 +113,13 @@ input[type="search"] {
     height: 30px;
 }
 
-.content .header {
+.bell {
+    fill: #000000;
+    width: 25px;
+    height: 25x;
+}
+
+.content .header .topHeader {
     background-color: white;
     padding: 10px;
     display:flex;
@@ -124,7 +139,7 @@ input[type="search"] {
     align-items: center;
     justify-content: flex-end;
     gap: 20px;
-    width: 35%;
+    width: 40%;
 }
 
 .two p {
@@ -134,12 +149,66 @@ input[type="search"] {
 }
 
 img {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
 }
 
 .one input[type="search"] {
     /*width: 100%;*/
     margin-right: 50px;
+}
+
+/* Bottom Header */
+.bottomHeader {
+    display: flex;
+}
+
+.bottomHeader .two {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    width: 35%;
+}
+
+.bottomHeader .two .greeting {
+    font-family: "Sans_Flex_SemiBold";
+    color: black;
+    font-size: 12px;
+}
+
+.bottomHeader .one {
+    width: 10%;
+}
+
+.bottomHeader .one img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.bottomHeader button {
+    background-color: #0f77ff;
+    color: white;
+    border: 0;
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Sans_Flex_SemiBold";
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.bottomHeader button:hover {
+    background-color: #3f92ff;
+}
+
+.bottomHeader .three {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 55%;
 }
