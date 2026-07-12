@@ -8,7 +8,21 @@
     font-family: "Sans_Flex_Bold";
     src: url("./fonts/Google_Sans_Flex/static/GoogleSansFlex_120pt-Bold.ttf") 
          format("truetype");
-    
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sans_Flex_Regular";
+    src: url("./fonts/Google_Sans_Flex/static/GoogleSansFlex_120pt-Regular.ttf") 
+         format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sans_Flex_SemiBold";
+    src: url("./fonts/Google_Sans_Flex/static/GoogleSansFlex_120pt-SemiBold.ttf") 
+         format("truetype");
+    font-style: normal;
 }
 
 /* Layout */
@@ -23,6 +37,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
 .content {
@@ -34,26 +49,39 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    margin-bottom: 20px;
+    /*margin-bottom: 30px;*/
     font-family: "Sans_Flex_Bold";
     color:white;
+    font-size: 30px;
 }
 
 .sideElement {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px;
+    gap: 15px;
+    padding: 5px;
     /*margin-bottom: 10px;
     border-radius: 5px;*/
     cursor: pointer;
+    font-family: "Sans_Flex_SemiBold";
+    font-size: 14px;
+    color:white;
     /*transition: background-color 0.3s ease;*/
 }
 
-.svg1 {
+.sideElement:hover {
+    background-color: #3f92ff;
+}
+
+svg.logoIcon {
     width: 40px;
     height: 40px;
+}
+
+.icon {
     fill: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
 }
 
 h1 {
