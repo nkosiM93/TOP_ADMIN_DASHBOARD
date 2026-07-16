@@ -1,27 +1,24 @@
 * {
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 @font-face {
     font-family: "Sans_Flex_Bold";
-    src: url("./fonts/Google_Sans_Flex/static/GoogleSansFlex_120pt-Bold.ttf") 
-         format("truetype");
+    src: url("./fonts/Google_Sans_Flex/static/GoogleSansFlex_120pt-Bold.ttf") format("truetype");
     font-style: normal;
 }
 
 @font-face {
     font-family: "Sans_Flex_Regular";
-    src: url("./fonts/Google_Sans_Flex/static/GoogleSansFlex_120pt-Regular.ttf") 
-         format("truetype");
+    src: url("./fonts/Google_Sans_Flex/static/GoogleSansFlex_120pt-Regular.ttf") format("truetype");
     font-style: normal;
 }
 
 @font-face {
     font-family: "Sans_Flex_SemiBold";
-    src: url("./fonts/Google_Sans_Flex/static/GoogleSansFlex_120pt-SemiBold.ttf") 
-         format("truetype");
+    src: url("./fonts/Google_Sans_Flex/static/GoogleSansFlex_120pt-SemiBold.ttf") format("truetype");
     font-style: normal;
 }
 
@@ -29,7 +26,7 @@
 .container {
     display: grid;
     grid-template-columns: 250px 1fr;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .sidebar {
@@ -42,31 +39,27 @@
 
 .content {
     background-color: #e9e9e9;
+    padding: 0;
 }
 
 .logo {
     display: flex;
     gap: 10px;
     align-items: center;
-    /*margin-bottom: 30px;*/
     font-family: "Sans_Flex_Bold";
-    color:white;
+    color: white;
     font-size: 30px;
 }
-
 
 .sideElement {
     display: flex;
     align-items: center;
     gap: 15px;
     padding: 5px;
-    /*margin-bottom: 10px;
-    border-radius: 5px;*/
     cursor: pointer;
     font-family: "Sans_Flex_SemiBold";
     font-size: 14px;
-    color:white;
-    /*transition: background-color 0.3s ease;*/
+    color: white;
 }
 
 .sideElement:hover {
@@ -84,18 +77,14 @@ svg.logoIcon {
     height: 20px;
 }
 
-/* Content Area*/
-.content {
-    padding: 0px;
-}
-
+/* Content area */
 .header {
     padding: 10px 20px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20PX;
+    gap: 20px;
 }
 
 input[type="search"] {
@@ -116,15 +105,14 @@ input[type="search"] {
 .bell {
     fill: #000000;
     width: 25px;
-    height: 25x;
+    height: 25px;
 }
 
 .content .header .topHeader {
     background-color: white;
     padding: 10px;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    /*align-items: center;*/
 }
 
 .one {
@@ -155,18 +143,17 @@ img {
 }
 
 .one input[type="search"] {
-    /*width: 100%;*/
     margin-right: 50px;
 }
 
-/* Bottom Header */
+/* Bottom header */
 .bottomHeader {
     display: flex;
 }
 
 .bottomHeader .two {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 5px;
@@ -213,42 +200,38 @@ img {
     width: 55%;
 }
 
-/* Content Area */
+/* Content area */
 .contentSection {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-auto-rows: auto;
     gap: 10px;
-    padding-top: 30px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    padding: 30px 10px 10px;
 }
 
 .mainContent {
     grid-column: 1 / 2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
 }
 
-.mainContent h2, .sideContent h2 {
+.leftContent h2,
+.sideContent h2 {
     font-family: "Sans_Flex_SemiBold";
     color: black;
     font-size: 18px;
 }
 
-.mainContentOdd {
-    grid-column: 1 / 2;
-    height: 180px;
-    background-color: #ffffff;
-    border-left: 5px solid #0f77ff;
-    border-radius: 5px;
-    padding: 10px;
+.leftContent {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+.mainContentOdd,
 .mainContentEven {
-    grid-column: 2 / 3;
     height: 180px;
     background-color: #ffffff;
     border-left: 5px solid #0f77ff;
